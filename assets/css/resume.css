@@ -1,113 +1,153 @@
-
-.mt-m{margin-top:10px!important}
-#background{    
-  width: 100%;
-  height: 100%;
-  background-image: url(../images/bg_c.jpg);
-  background-size: cover;
-  position: fixed;
-  top: 0;
+.b_left{border-left:1px dotted #aaa;}
+.b_right{border-right:1px dotted #aaa;}
+.b_bottom{border-bottom:1px dotted #aaa;}
+.b_top{border-top:1px dotted #aaa;}
+body{
+  padding: 20px 0 40px 0;
 }
-#titleWrapper{
-  padding-top:30px;
-}
-#resumePaper{
-  z-index: 1;
-  position: relative;
-  width: 60%;
-  margin: 20px auto;
-  background-color: rgba(200, 180, 135,.5);
-  box-shadow: 0px 0px 5px 5px #eee;
-  border-radius: 5px;
-  text-align: center;
-  padding-bottom: 15px;
-}
-#resumePhoto{
-  display: block;
-  margin:0 auto;
-  border-radius: 50%;
-  box-shadow: 0 0 10px;
-}
-#resumeTitle{
-  display: block;
-  padding: 20px 0;
-  font-size: 25px;
-  font-weight: bold;
-  font-family: Microsoft YaHei;
-}
-#resumeLeft,#resumeRight{
-  width:50%;
-  float:left;
-  padding: 0px 20px;
-}
-#resumeLeft{
-  border-right: 3px dashed #fff;
-}
-.r-t{
-  border-left: 3px solid #fff;
-  border-right: 3px solid #fff;
-  background-color: #000;
-  width: 110px;
-  font-size: 20px;
-  line-height: 35px;
-  height: 35px;
-  margin-top: 10px;
-  border-radius: 15px 0;
-}
-.r-c{
-  text-align: left;
-  padding: 10px;
-  border-bottom: 3px dashed #fff;
-}
-.r-c:after,.clearfix:after{
-  clear:both;
-}
-.r-c:after,.r-c:before,.clearfix:before, .clearfix:after{
-  display: table;
-  content: " ";
-}
-.l-i{
-  font-size: 20px;
-  margin: 0 auto 10px auto;
-  text-align: center;
-  width: 60px;
-  background-color: rgba(80,80,80,0.8);
-  height: 24px;
-  line-height: 24px;
-  border-style: solid;
-  border-width: 0 0 1px 4px;
-}
-.l-t{
-  width: 30%;
-  float: left;
-  text-align: right;
-  background-color: rgba(80,80,80,0.8);
-  margin-bottom: 10px;
-  font-size: 18px;
-  border-left: 4px solid #fff;
-  border-bottom: 1px solid #fff;
-  padding-right: 5px;
-  white-space: nowrap;
-}
-.l-c{
-  width: 70%;
-  float: left;
-  margin-bottom: 10px;
-  border-bottom: 1px solid #fff;
-  padding-left: 10px;
-  border-left: 1px solid #fff;
-  font-size:15px;
-  word-break: break-word;
+.resume{
+  background-color:transparent;
   color:#000;
+  overflow-x:auto;
 }
-.n-b{
-  border-bottom:none;
+
+.resume .title{
+  display: inline-block;
+  color:#800000;
+  font-weight:bold;
+  font-size:18px;
+  line-height: 25px;
 }
-.link{
-  cursor:pointer;
-  text-decoration:underline;
-  color:#fff;
+.resume .headline{
+  margin: 0;
+  line-height: 30px;
+  color:#800000;
 }
-.link:hover{
-  color:#aaa;
+.resume .value{
+  display:inline-block;
+  vertical-align: top;
+  padding-left:10px;
+  font-size:16px;
+  line-height:28px;
+}
+
+.p_wrap{
+  width:1000px;
+  margin:20px auto;
+  border:1px dotted #aaa;
+  border-radius:2px;
+  background-color:rgba(250,250,250,0.7);
+}
+/* personal info*/
+.resume .personal_info .main{
+  background:url("../images/resume/photograph.png") no-repeat 6px center;
+  padding-left:140px;
+  width:100%;
+}
+.resume .personal_info .main h1{
+  height: 100px;
+  margin: 0 auto;
+  line-height: 90px;
+  font-size: 3em;
+  padding-left: 100px;
+  color:#800000;
+}
+.resume .personal_info .main .title{
+  text-align: center;
+  width:100px;
+}
+.resume .personal_info .main .title.marry{
+  height: 70px;
+  line-height: 70px;
+}
+.resume .personal_info .main .value{
+  width:80px;
+}
+.resume .personal_info .main .value.marry{width:756px;height: 70px;line-height: 70px;}
+
+.resume .personal_info .sub{
+  line-height: 30px;
+}
+.info_common{
+  display:inline-block;
+  padding-left:25px;
+  background-repeat:no-repeat;
+  background-position:6px center;
+}
+.resume .personal_info .born{
+  width:120px;
+  background-image:url("../images/resume/born.png") ;
+}
+.resume .personal_info .address{
+  width:145px;
+  background-image:url("../images/resume/address.png") ;
+}
+.resume .personal_info .dy{
+  width:100px;
+  background-image:url("../images/resume/dy.png") ;
+}
+.resume .personal_info .phone{
+  width:185px;
+  background-image:url("../images/resume/phone.png") ;
+}
+.resume .personal_info .mail{
+  width:240px;
+  background-image:url("../images/resume/mail.png") ;
+}
+
+.section_com{
+  padding-left:35px;
+  background-repeat:no-repeat;
+  background-position: 6px 6px;
+}
+/* mine */
+.mine .item{
+  float:left;
+  padding-left:35px;
+  background-repeat:no-repeat;
+  background-position:6px 6px;
+  width:50%;
+}
+.mine .intension{ background-image:url("../images/resume/intension.png"); }
+.mine .education{ background-image:url("../images/resume/education.png"); }
+
+/* experience */
+.experience{
+  padding-left:35px;
+  margin-top:15px;
+  background-repeat:no-repeat;
+  background-position: 6px 6px;
+}
+.experience .item{margin-top:25px;}
+.experience .value_w{width:160px;}
+.experience .value_w_max{width:870px;}
+.work{background-image: url("../images/resume/work.png")}
+.project{background-image: url("../images/resume/project.png")}
+
+.p_right{
+  padding-right: 6px;
+}
+.skill_bg{
+  background-image:url("../images/resume/skill.png");
+}
+.skills .item{
+  margin-top:20px;
+}
+.school_bg{
+  background-image:url("../images/resume/school.png");
+}
+.selfcom_bg{
+  background-image:url("../images/resume/self_com.png");
+}
+.table{
+  
+}
+.table_item{
+  padding-left: 32px;
+  border-bottom: 1px dotted #aaa;
+}
+.indent{
+  text-indent:2em; 
+  padding: 0 30px;
+  margin: 10px 0;
 }
