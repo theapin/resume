@@ -49,21 +49,21 @@ body{
   margin: 0 auto;
   line-height: 90px;
   font-size: 3em;
-  padding-left: 100px;
   color:#800000;
+  text-align: center;
 }
 .resume .personal_info .main .title{
   text-align: center;
   width:100px;
 }
 .resume .personal_info .main .title.marry{
-  height: 70px;
-  line-height: 70px;
+  height: 30px;
+  line-height: 30px;
 }
 .resume .personal_info .main .value{
   width:80px;
 }
-.resume .personal_info .main .value.marry{width:756px;height: 70px;line-height: 70px;}
+.resume .personal_info .main .value.marry{width:756px;height: 30px;line-height: 30px;}
 
 .resume .personal_info .sub{
   line-height: 30px;
